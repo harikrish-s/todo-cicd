@@ -1,2 +1,1 @@
 # envshare
-Chandy Lamport algorithm
