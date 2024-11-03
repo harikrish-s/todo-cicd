@@ -7,12 +7,15 @@ const navigation = [
   {
     name: "Share",
     href: "/share",
+    external: false,
   },
   {
     name: "Unseal",
     href: "/unseal",
+    external: true,
   },
 ] satisfies { name: string; href: string; external?: boolean }[];
+
 
 export const Header: React.FC = () => {
   const pathname = usePathname();
@@ -44,7 +47,6 @@ export const Header: React.FC = () => {
         </div>
       </div>
 
-      {/* Fancy fading bottom border */}
     </header>
   );
 };
